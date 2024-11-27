@@ -1,0 +1,65 @@
+hmtl,
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.cont-principal {
+    width: 70vw;
+
+    margin: auto;
+    padding: 20px;
+    background-color: violet;
+
+}
+
+.container {
+    background-color: aquamarine;
+
+    display: flex;
+    
+
+}
+
+.row-reverse {
+    display: flex;
+    background-color: brown;
+
+    flex-direction: row-reverse;
+}
+
+.colum {
+    display: flex;
+    background-color: yellow;
+    width: 10vw;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 10px;
+
+}
+
+.colum-reverse {
+    display: flex;
+    background-color: chartreuse;
+    width: 10vw;
+    border-radius: 10px;
+    flex-direction: column-reverse;
+    padding: 10px;
+    
+}
+
+.item {
+
+    /* background-color: rebeccapurple; */
+    border: 1px solid green;
+    text-align: center;
+
+    padding: 10px;
+
+    /* flex: auto; */
+}
+
+.espaco{
+    margin-bottom: 10px;
+}
