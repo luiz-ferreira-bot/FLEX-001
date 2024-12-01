@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            background-color: aqua;
+            padding: 10px;
+            width: 300px;
+            height: 300px;
+
+        }
+
+        .item {
+            /* flex: 1 1 100px;/* siguinifica que cada item tera no minimo 100px cada*/
+            border: 1px solid black;
+            text-align: center;
+            flex: 0 0 auto;
+            width: 70px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container espaco">
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div>
+    </div>
+</body>
+
+</html>
