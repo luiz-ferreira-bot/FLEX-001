@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexible Box</title>
     <style>
-        h1{
+        h1 {
             text-align: center;
         }
+
         .container {
             background-color: aquamarine;
 
             display: flex;
             gap: 10px;
             flex-flow: row nowrap;
-            
+
 
 
 
@@ -25,201 +26,205 @@
 
             background-color: rebeccapurple;
             border: 1px solid green;
-            text-align: center;       
+            text-align: center;
         }
 
-        .flex-start{
+        .flex-start {
             justify-content: flex-start;
         }
 
-        .flex-end{
+        .flex-end {
             justify-content: flex-end;
         }
 
-        .center{
+        .center {
             justify-content: center;
         }
 
-        .space-between{
+        .space-between {
             justify-content: space-between;
         }
-        .space-around{
+
+        .space-around {
             justify-content: space-around;
         }
-        .space-evenly{
+
+        .space-evenly {
             justify-content: space-evenly;
         }
 
-        .itens{
+        .itens {
             height: 200px;
             background-color: yellowgreen;
         }
 
-        .start{
+        .start {
             align-items: flex-start;
         }
 
-        .end{
+        .end {
             align-items: flex-end;
         }
 
-        .center{
+        .center {
             align-items: center;
         }
 
-        .baseline{
+        .baseline {
             align-items: baseline;
         }
-           
-            
+
+        .container-principal{
+            width: 70vw;
+            background-color: lightcyan;
+            padding: 40px;
+            margin: auto;
+        }
+        
     </style>
 </head>
 
 <body>
-    <h1>JUSTIFY-CONTENT: ;</h1>
-    <h2>
-        Justfy-content: <span>flex-start;</span>
-    </h2>
-    <div class="container flex-start">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
-    </div>
+    <div class="container-principal">
+        <h1>JUSTIFY-CONTENT: ;</h1>
+        <h2>
+            Justfy-content: <span>flex-start;</span>
+        </h2>
+        <div class="container flex-start">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
+        <h2>
+            Justfy-content: <span>flex-end;</span>
+        </h2>
+        <div class="container flex-end">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
+        <h2>
+            Justfy-content: <span>center;</span>
+        </h2>
+        <div class="container center ">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
+        <h2>
+            Justfy-content: <span>space-between;</span>
+        </h2>
+        <div class="container space-between">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
+        <h2>
+            Justfy-content: <span>space-around;</span>
+        </h2>
+        <div class="container space-around">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
 
-    <h2>
-        Justfy-content: <span>flex-end;</span>
-    </h2>
-    <div class="container flex-end">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
-    </div>
+        <h2>
+            Justfy-content: <span>space-evenly;</span>
+        </h2>
+        <div class="container space-evenly">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
+        <HR>
+        </HR>
 
-    <h2>
-        Justfy-content: <span>center;</span>
-    </h2>
-    <div class="container center ">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
-    </div>
-
-    <h2>
-        Justfy-content: <span>space-between;</span>
-    </h2>
-    <div class="container space-between">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
-    </div>
-
-    <h2>
-        Justfy-content: <span>space-around;</span>
-    </h2>
-    <div class="container space-around">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
-    </div>
-    
-    <h2>
-        Justfy-content: <span>space-evenly;</span>
-    </h2>
-    <div class="container space-evenly">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
-    </div>
-    <HR></HR>
-    
-    <H1>ALIGN-ITENS: ;</H1>
-
-    <h2>
-        Align-itens: <span>stretch (PADRÃO)</span>
-    </h2>
-    <div class="container itens space-evenly">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
-    </div>
-
-    <h2>
-        Align-itens: <span>flex-start;</span>
-    </h2>
-    <div class="container start itens space-between ">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
-    </div>
-    <h2>
-        Align-itens: <span>flex-end;</span>
-    </h2>
-    <div class="container end itens space-between">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
-    </div>
-
-    <h2>
-        Align-itens: <span>center;</span>
-    </h2>
-    <div class="container center itens space-between">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
-    </div>
-
-    <h2>
-        Align-itens: <span>baseline;</span>
-    </h2>
-    <div class="container baseline itens space-between">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
+        <H1>ALIGN-ITENS: ;</H1>
+        <h2>
+            Align-itens: <span>stretch (PADRÃO)</span>
+        </h2>
+        <div class="container itens space-evenly">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
+        <h2>
+            Align-itens: <span>flex-start;</span>
+        </h2>
+        <div class="container start itens space-between ">
+            
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+                <div class="item">D</div>
+                <div class="item">E</div>
+                <div class="item">F</div>
+                <div class="item">G</div>           
+        </div>
+        <h2>
+            Align-itens: <span>flex-end;</span>
+        </h2>
+        <div class="container end itens space-between">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
+        <h2>
+            Align-itens: <span>center;</span>
+        </h2>
+        <div class="container center itens space-between">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
+        <h2>
+            Align-itens: <span>baseline;</span>
+        </h2>
+        <div class="container baseline itens space-between">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
     </div>
 
 </body>
