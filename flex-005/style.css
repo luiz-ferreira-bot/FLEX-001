@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: orangered;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 90vw;
+    height: 90vh;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+section {
+    background-color: chartreuse;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border: 1px solid;
+}
