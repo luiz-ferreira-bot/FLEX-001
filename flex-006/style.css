@@ -1,0 +1,35 @@
+.container {
+    background-color: yellowgreen;
+    display: flex;
+    flex-wrap: wrap;
+    /* permite multiplas linhas */
+    flex-flow: row wrap;
+    /* shortrend do flex-direction e flex-wrap */
+    height: 400px;
+
+}
+
+.container div {
+    background-color: violet;
+    border: 1px solid black;
+    padding: 40px;
+}
+
+.flex-start{
+align-content: flex-start;
+}
+.flex-end{
+    align-content: flex-end;
+}
+.center{
+    align-content: center;
+}
+.space-between{
+    align-content: space-between;
+}
+.space-arownd{
+    align-content: space-around;
+}
+.space-evely{
+    align-content: space-evenly;
+}
