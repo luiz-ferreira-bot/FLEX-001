@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-shrink / flex-grow</title>
+
+    <style>
+        .container {
+            background-color: aqua;
+            display: flex;
+            height: 30vh;
+            flex-flow: row nowrap; /* em linha / sem quebrar */
+            /* padding: 10px; */
+            
+        }
+
+        .item {
+            background-color: rgb(6, 206, 82);
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 200px;
+           
+        }
+.up-1{
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+.up-2{
+    
+    height: 600px;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+.up-3{
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+      
+     
+  
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item up-1">item1</div>
+        <div class="item up-2">
+            <img src="https://th.bing.com/th/id/R.d2da019ba746b70ffa10c0faeac177dd?rik=jmIr1Iy0NWTR2Q&riu=http%3a%2f%2fwww.filhovemver.com.br%2fwp-content%2fuploads%2f2014%2f11%2fpor-do-sol-lindo.jpg&ehk=6PrYNWoz7PPw7MXceXpaPbiun%2bLd8I95xN6t%2f206Vuo%3d&risl=&pid=ImgRaw&r=0" alt="">
+        </div>
+        <div class="item up-3">item3</div>
+    </div>
+ 
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-shrink / flex-grow</title>
+
+    <style>
+        .container {
+            background-color: aqua;
+            display: flex;
+            height: 30vh;
+            flex-flow: row nowrap; /* em linha / sem quebrar */
+            /* padding: 10px; */
+            
+        }
+
+        .item {
+            background-color: rgb(6, 206, 82);
+            border: 1px solid black;
+            text-align: center;
+           
+        }
+.up-1{
+    /* flex-shrink: 1;
+    flex-grow: 0;
+    flex-basis: 200px; */
+
+    flex: 0 1 200px;
+
+}
+.up-2{
+    /* flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 150px; */
+
+    flex: 1 1 150px;
+
+}
+.up-3{
+    /* flex-shrink: 8;
+    flex-grow: 1;
+    flex-basis: auto; */
+
+    flex: 0 8 auto;
+
+}
+
+/* abreviaçoes possiveis do FLEX:;
+
+-flex: 0 1 auto ou flex: initial;
+-flex: 0 0 auto ou flex: none;
+-flex: 1 1 auto ou flex: auto;
+-flex: 3 ou flex: 3 1 auto = 3 é o valor de GROW o restante sao os padroes de shrink= 1 e basis= auto
+
+*/
+
+      
+     
+  
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item up-1">item1</div>
+        <div class="item up-2">
+            
+        </div>
+        <div class="item up-3">item3</div>
+    </div>
+ 
+</body>
+
+</html>

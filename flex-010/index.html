@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-shrink / flex-grow</title>
+
+    <style>
+        .container {
+            background-color: aqua;
+            display: flex;
+            flex-flow: row nowrap; 
+            padding: 10px;
+            
+        }
+
+        .item {
+            background-color: rgb(6, 206, 82);
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 250px;
+            flex-shrink: 1;/* encolher */
+            flex-grow: 0; /* espandir/crecer */
+        }
+
+        .up-1{
+            flex-grow: 0;
+        } 
+
+        .up-2{
+            flex-grow: 1;
+        }
+
+        .up-3{
+            flex-grow: 2;
+        }
+
+     
+  
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item up-1">item1</div>
+        <div class="item up-2">item2</div>
+        <div class="item up-3">item3</div>
+    </div>
+ 
+</body>
+
+</html>
